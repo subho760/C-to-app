@@ -1,13 +1,11 @@
 namespace App;
 
-public partial class MainPage : ContentPage
+public class MainPage : ContentPage
 {
-    // Explicitly define the WebView inside the C# backend engine layer
     private WebView AppWebView;
 
     public MainPage()
     {
-        // Build the invisible full-screen web bridge manually to avoid XAML generation errors
         AppWebView = new WebView
         {
             Source = "index.html",
@@ -15,10 +13,7 @@ public partial class MainPage : ContentPage
             VerticalOptions = LayoutOptions.Fill
         };
 
-        // Listen for when the JavaScript sends a message down to the C# engine
         AppWebView.Navigating += OnWebViewNavigating;
-
-        // Set the manually built WebView container as the core content of the application screen
         Content = AppWebView;
     }
 
