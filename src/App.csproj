@@ -12,9 +12,11 @@
     <ApplicationTitle>NightShadow App Wrapper</ApplicationTitle>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
-
-    <MauiIcon Include="appicon.png" />
   </PropertyGroup>
+
+  <ItemGroup>
+    <MauiIcon Include="appicon.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <MauiAsset Include="wwwroot\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
