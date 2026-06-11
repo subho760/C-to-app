@@ -1,43 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>NightShadow Dashboard</title>
+    <title>NightShadow Racing</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="app-container">
-        <header>
-            <div class="logo">NightShadow <span>OS</span></div>
-            <div id="status-dot" class="status-online"></div>
-        </header>
+    <canvas id="gameCanvas"></canvas>
 
-        <section class="main-card">
-            <h3>System Status</h3>
-            <div class="metrics">
-                <div class="metric-box">
-                    <span class="label">Framework</span>
-                    <span class="value" style="color: #3b82f6;">.NET 8</span>
-                </div>
-                <div class="metric-box">
-                    <span class="label">UI Layer</span>
-                    <span class="value" style="color: #10b981;">HTML5</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="control-panel">
-            <button class="action-btn primary" id="btn-ping">Test Device Connection</button>
-            <button class="action-btn secondary" id="btn-theme">Toggle Accent Color</button>
-        </section>
-
-        <section class="console-log">
-            <h4>System Logs</h4>
-            <div id="log-output">App initialized successfully. Waiting for user action...</div>
-        </section>
+    <div class="controls">
+        <button id="leftBtn">◀ Move Left</button>
+        <button id="rightBtn">Move Right ▶</button>
     </div>
 
     <script src="js/app.js"></script>
