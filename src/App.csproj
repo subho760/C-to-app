@@ -9,8 +9,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
-    <ApplicationId>com.nightshadow.ctoapp</ApplicationId>
-    <ApplicationTitle>NightShadow App Wrapper</ApplicationTitle>
+    <ApplicationId>com.nightshadow.mynewgame</ApplicationId>
+<ApplicationTitle>My New Epic Game</ApplicationTitle>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
   </PropertyGroup>
