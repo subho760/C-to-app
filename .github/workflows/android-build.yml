@@ -1,6 +1,5 @@
 name: Build and Sign Android App (APK & AAB)
 
-# Removed the "push" trigger so it NEVER runs automatically anymore
 on:
   workflow_dispatch:
 
