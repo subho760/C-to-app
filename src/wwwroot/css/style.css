@@ -1,145 +1,47 @@
-* {
-    box-sizing: border-box;
+body {
+    background-color: #0f172a;
     margin: 0;
     padding: 0;
-    -webkit-user-select: none; /* Prevents text highlighting on mobile touch */
-}
-
-body {
-    background-color: #0b0f19;
-    color: #f1f5f9;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-.app-container {
-    width: 100%;
-    max-width: 450px;
+    overflow: hidden;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 5px;
+    justify-content: center;
+    height: 100vh;
 }
 
-.logo {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-.logo span {
-    color: #3b82f6;
-}
-
-#status-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
-}
-
-.status-online { background-color: #10b981; }
-.status-alert { background-color: #ef4444; box-shadow: 0 0 8px rgba(239, 68, 68, 0.6) !important; }
-
-/* Dashboard Cards */
-.main-card, .control-panel, .console-log {
-    background: #111827;
-    border: 1px solid #1f2937;
-    border-radius: 16px;
-    padding: 20px;
-}
-
-h3, h4 {
-    font-size: 14px;
-    color: #9ca3af;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-.metrics {
-    display: flex;
-    gap: 15px;
-}
-
-.metric-box {
-    flex: 1;
-    background: #1f2937;
-    padding: 15px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.label {
-    font-size: 12px;
-    color: #9ca3af;
-}
-
-.value {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-/* Buttons */
-.control-panel {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.action-btn {
-    width: 100%;
-    border: none;
-    padding: 14px;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.action-btn.primary {
-    background: #3b82f6;
-    color: white;
-}
-
-.action-btn.primary:active {
-    background: #1d4ed8;
-    transform: scale(0.98);
-}
-
-.action-btn.secondary {
-    background: #1f2937;
-    color: #f3f4f6;
-    border: 1px solid #374151;
-}
-
-.action-btn.secondary:active {
-    background: #374151;
-}
-
-/* Console Log */
-#log-output {
-    background: #030712;
-    font-family: monospace;
-    font-size: 13px;
-    padding: 12px;
+#gameCanvas {
+    background: #1e293b;
+    border: 3px solid #a855f7;
     border-radius: 8px;
-    border-left: 3px solid #3b82f6;
-    color: #34d399;
-    min-height: 60px;
-    line-height: 1.4;
+    max-width: 100%;
+    max-height: 70vh;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.controls button {
+    flex: 1;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #a855f7;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px #7e22ce;
+}
+
+.controls button:active {
+    background-color: #7e22ce;
+    box-shadow: 0 2px #6b21a8;
+    transform: translateY(3px);
 }
