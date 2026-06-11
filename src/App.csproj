@@ -12,6 +12,8 @@
     <ApplicationTitle>NightShadow App Wrapper</ApplicationTitle>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+
+    <MauiIcon Include="appicon.png" />
   </PropertyGroup>
 
   <ItemGroup>
