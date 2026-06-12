@@ -9,7 +9,7 @@
     <Nullable>enable</Nullable>
 
     <ApplicationId>com.nightshadow.ctoapp</ApplicationId>
-    <ApplicationTitle>NightShadow App Wrapper</ApplicationTitle>
+    <ApplicationTitle>NightShadow Racing</ApplicationTitle>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
   </PropertyGroup>
