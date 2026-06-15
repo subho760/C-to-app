@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>NightShadow Racing</title>
+    <title>Arrows Out</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <canvas id="gameCanvas"></canvas>
-
-    <div class="controls">
-        <button id="leftBtn">◀ Move Left</button>
-        <button id="rightBtn">Move Right ▶</button>
+    <div id="game-container">
+        <div id="header-panel">
+            <h2 id="level-title">LEVEL 1</h2>
+            <div id="status-message">Clear all arrows to escape!</div>
+        </div>
+        
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        
+        <div id="control-panel">
+            <button id="reset-btn" onclick="resetLevel()">Restart Level</button>
+        </div>
     </div>
 
-    <script src="js/app.js"></script>
+    <script src="js/game.js"></script>
 </body>
 </html>
